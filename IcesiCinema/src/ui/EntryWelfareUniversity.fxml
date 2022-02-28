@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="109.0" layoutY="33.0" text="Welcome to ICESI CINE" />
+      <Label layoutX="42.0" layoutY="115.0" text="Ingresar" />
+      <TextField fx:id="idBUTF" layoutX="42.0" layoutY="144.0" promptText="Cedula" />
+      <Button fx:id="joinBTN" layoutX="145.0" layoutY="314.0" mnemonicParsing="false" onAction="#joinBU" text="Ingresar" />
+   </children>
+</AnchorPane>

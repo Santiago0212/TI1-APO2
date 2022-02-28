@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <DatePicker fx:id="dateFunctionDP" layoutX="30.0" layoutY="49.0" />
+      <Label layoutX="30.0" layoutY="32.0" text="Fecha de la funcion" />
+      <Label layoutX="30.0" layoutY="82.0" text="Hora de la funcion" />
+      <Label layoutX="33.0" layoutY="137.0" text="Nombre de la funcion" />
+      <Label layoutX="31.0" layoutY="192.0" text="Duracion" />
+      <Label layoutX="31.0" layoutY="245.0" text="Sala" />
+      <TextField fx:id="timeDateFunctionTF" layoutX="30.0" layoutY="99.0" />
+      <TextField fx:id="nameFunctionTF" layoutX="32.0" layoutY="154.0" />
+      <TextField fx:id="durationFunctionTF" layoutX="30.0" layoutY="209.0" />
+      <TextField fx:id="numberSalaTF" layoutX="32.0" layoutY="262.0" />
+      <Button fx:id="doneBTN" layoutX="413.0" layoutY="262.0" mnemonicParsing="false" onAction="#doneRegisteredFunction" text="Hecho" />
+   </children>
+</AnchorPane>
