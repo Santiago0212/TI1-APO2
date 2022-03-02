@@ -18,7 +18,7 @@ public class RegisterClients {
     private TextField idClientTF;
 
     @FXML
-    private ChoiceBox<?> salaChoiseCB;
+    private ChoiceBox<?> salaChoiceCB;
 
     @FXML
     void doneRegisteredClient(ActionEvent event) {
