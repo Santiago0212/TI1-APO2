@@ -39,7 +39,7 @@ public class EntryWelfareUniversity{
     
 	
     public EntryWelfareUniversity() throws IOException{
-    	path = "D:/Documentos/Git/TI1-APO2/IcesiCinema/identifications.txt";
+    	path = "identifications.txt";
     }
     
     public void createReader() throws IOException {
