@@ -30,28 +30,38 @@ private ArrayList<Function> functions;
 		if(date.compareTo(now)<0) {
 			addable = false;
 		} else {
-			for(int i=0; i<functions.size() && addable; i++) {
-				long substraction1 = (functions.get(i).getDate().getTime() - date.getTime())/1000; //Se divide entre 1000 para obtener segundos
-
-				if(substraction1<duration && room.equals(functions.get(i).getRoom())) {
+			for(Function f : functions) {
+				
+				double addingInf = date.getTime()/1000;
+				double addingSup = (date.getTime()/1000) + duration;
+				
+				double currentInf = f.getDate().getTime()/1000;
+				double currentSup = (f.getDate().getTime()/1000) + f.getDuration();
+				
+				if(duration==0) {
 					addable = false;
 				}
 				
-				long substraction2 = (long) ((functions.get(i).getDate().getTime() - (date.getTime() + duration))/1000); //Se divide entre 1000 para obtener segundos
-
-				if(substraction2<duration && room.equals(functions.get(i).getRoom())) {
+				//Si la pelicula comienza durante una que ya existe
+				if(addingInf>currentInf && addingInf<currentSup) {
 					addable = false;
 				}
 				
-				long substraction3 = (long) (((functions.get(i).getDate().getTime() + functions.get(i).getDuration()) - date.getTime())/1000); //Se divide entre 1000 para obtener segundos
-
-				if(substraction3<duration && room.equals(functions.get(i).getRoom())) {
+				//Si la pelicula termina durante una que ya existe
+				if(addingSup>currentInf && addingSup<currentSup) {
 					addable = false;
 				}
 				
-				long substraction4 = (long) (((functions.get(i).getDate().getTime() + functions.get(i).getDuration()) - (date.getTime() + duration))/1000); //Se divide entre 1000 para obtener segundos
-
-				if(substraction4<duration && room.equals(functions.get(i).getRoom())) {
+				
+				if(currentInf>addingInf && currentInf<addingSup) {
+					addable = false;
+				}
+				
+				if(currentInf>addingInf && currentSup<addingSup) {
+					addable = false;
+				}
+				
+				if(addingInf==currentInf && addingSup==currentSup) {
 					addable = false;
 				}
 				
