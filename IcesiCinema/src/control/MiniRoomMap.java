@@ -117,163 +117,163 @@ public class MiniRoomMap {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaA2BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(0, 1)) {
     			function.room.assingClient(client, 0, 1);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaA3BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(0, 2)) {
     			function.room.assingClient(client, 0, 2);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaA4BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(0, 3)) {
     			function.room.assingClient(client, 0, 3);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaA5BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(0, 4)) {
     			function.room.assingClient(client, 0, 4);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaA6BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(0, 5)) {
     			function.room.assingClient(client, 0, 5);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaA7BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(0, 6)) {
     			function.room.assingClient(client, 0, 6);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB1BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 0)) {
     			function.room.assingClient(client, 1, 0);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB2BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 1)) {
     			function.room.assingClient(client, 1, 1);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB3BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 2)) {
     			function.room.assingClient(client, 1, 2);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB4BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 3)) {
     			function.room.assingClient(client, 1, 3);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB5BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 4)) {
     			function.room.assingClient(client, 1, 4);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB6BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 5)) {
     			function.room.assingClient(client, 1, 5);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaB7BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(1, 6)) {
     			function.room.assingClient(client, 1, 6);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC1BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 0)) {
     			function.room.assingClient(client, 2, 0);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC2BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 1)) {
     			function.room.assingClient(client, 2, 1);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC3BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 2)) {
     			function.room.assingClient(client, 2, 2);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC4BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 3)) {
     			function.room.assingClient(client, 2, 3);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC5BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 4)) {
     			function.room.assingClient(client, 2, 4);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC6BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 5)) {
     			function.room.assingClient(client, 2, 5);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaC7BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(2, 6)) {
     			function.room.assingClient(client, 2, 6);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD1BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 0)) {
     			function.room.assingClient(client, 3, 0);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD2BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 1)) {
     			function.room.assingClient(client, 3, 1);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD3BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 2)) {
     			function.room.assingClient(client, 3, 2);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD4BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 3)) {
     			function.room.assingClient(client, 3, 3);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD5BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 4)) {
     			function.room.assingClient(client, 3, 4);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD6BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 5)) {
     			function.room.assingClient(client, 3, 5);
     		} else {
     			System.out.println("No disponible");
     		}
     	}else if(event.getSource()==sillaD7BTN) {
-    		if(function.room.isAvailable(0, 0)) {
+    		if(function.room.isAvailable(3, 6)) {
     			function.room.assingClient(client, 3, 6);
     		} else {
     			System.out.println("No disponible");
