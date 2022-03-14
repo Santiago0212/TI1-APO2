@@ -10,12 +10,16 @@ import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import model.Function;
 import model.FunctionData;
 
@@ -88,6 +92,16 @@ public class RegisterFunctions implements Initializable{
             alert.setTitle("Pudo añadir");
             alert.setContentText("Pudo añadir.");
             alert.showAndWait();
+            FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/Menu.fxml"));
+    		loader.setController(new Menu());
+    		Parent parent = (Parent) loader.load();
+    		Stage stage = new Stage();
+    		Scene scene = new Scene(parent);
+    		stage.setScene(scene);
+    		stage.show();
+    		
+    		Stage stage1 = (Stage) doneBTN.getScene().getWindow();
+    	    stage1.close();
             
             
         } else {
