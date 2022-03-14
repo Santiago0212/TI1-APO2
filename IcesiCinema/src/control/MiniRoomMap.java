@@ -1,13 +1,18 @@
 package control;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import model.Client;
 import model.Function;
 
-public class MiniRoomMap {
+public class MiniRoomMap implements Initializable{
+	
 	
 	private Client client;
 	private Function function;
@@ -115,6 +120,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 0)) {
     			function.room.assingClient(client, 0, 0);
     			successfullyAssignedChairlAlert();
+    			sillaA1BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -122,6 +135,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 1)) {
     			function.room.assingClient(client, 0, 1);
     			successfullyAssignedChairlAlert();
+    			sillaA2BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -129,6 +150,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 2)) {
     			function.room.assingClient(client, 0, 2);
     			successfullyAssignedChairlAlert();
+    			sillaA3BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -136,6 +165,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 3)) {
     			function.room.assingClient(client, 0, 3);
     			successfullyAssignedChairlAlert();
+    			sillaA4BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -143,6 +180,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 4)) {
     			function.room.assingClient(client, 0, 4);
     			successfullyAssignedChairlAlert();
+    			sillaA5BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -150,6 +195,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 5)) {
     			function.room.assingClient(client, 0, 5);
     			successfullyAssignedChairlAlert();
+    			sillaA6BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -157,6 +210,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(0, 6)) {
     			function.room.assingClient(client, 0, 6);
     			successfullyAssignedChairlAlert();
+    			sillaA7BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -164,6 +225,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 0)) {
     			function.room.assingClient(client, 1, 0);
     			successfullyAssignedChairlAlert();
+    			sillaB1BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -171,6 +240,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 1)) {
     			function.room.assingClient(client, 1, 1);
     			successfullyAssignedChairlAlert();
+    			sillaB2BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -178,6 +255,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 2)) {
     			function.room.assingClient(client, 1, 2);
     			successfullyAssignedChairlAlert();
+    			sillaB3BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -185,6 +270,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 3)) {
     			function.room.assingClient(client, 1, 3);
     			successfullyAssignedChairlAlert();
+    			sillaB4BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -192,6 +285,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 4)) {
     			function.room.assingClient(client, 1, 4);
     			successfullyAssignedChairlAlert();
+    			sillaB5BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -199,6 +300,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 5)) {
     			function.room.assingClient(client, 1, 5);
     			successfullyAssignedChairlAlert();
+    			sillaB6BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -206,6 +315,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(1, 6)) {
     			function.room.assingClient(client, 1, 6);
     			successfullyAssignedChairlAlert();
+    			sillaB7BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -213,6 +330,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 0)) {
     			function.room.assingClient(client, 2, 0);
     			successfullyAssignedChairlAlert();
+    			sillaC1BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -220,6 +345,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 1)) {
     			function.room.assingClient(client, 2, 1);
     			successfullyAssignedChairlAlert();
+    			sillaC2BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -227,6 +360,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 2)) {
     			function.room.assingClient(client, 2, 2);
     			successfullyAssignedChairlAlert();
+    			sillaC3BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -234,6 +375,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 3)) {
     			function.room.assingClient(client, 2, 3);
     			successfullyAssignedChairlAlert();
+    			sillaC4BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -241,6 +390,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 4)) {
     			function.room.assingClient(client, 2, 4);
     			successfullyAssignedChairlAlert();
+    			sillaC5BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -248,6 +405,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 5)) {
     			function.room.assingClient(client, 2, 5);
     			successfullyAssignedChairlAlert();
+    			sillaC6BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -255,6 +420,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(2, 6)) {
     			function.room.assingClient(client, 2, 6);
     			successfullyAssignedChairlAlert();
+    			sillaC7BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -262,6 +435,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 0)) {
     			function.room.assingClient(client, 3, 0);
     			successfullyAssignedChairlAlert();
+    			sillaD1BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -269,6 +450,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 1)) {
     			function.room.assingClient(client, 3, 1);
     			successfullyAssignedChairlAlert();
+    			sillaD2BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -276,6 +465,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 2)) {
     			function.room.assingClient(client, 3, 2);
     			successfullyAssignedChairlAlert();
+    			sillaD3BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -283,6 +480,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 3)) {
     			function.room.assingClient(client, 3, 3);
     			successfullyAssignedChairlAlert();
+    			sillaD4BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -290,6 +495,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 4)) {
     			function.room.assingClient(client, 3, 4);
     			successfullyAssignedChairlAlert();
+    			sillaD5BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -297,6 +510,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 5)) {
     			function.room.assingClient(client, 3, 5);
     			successfullyAssignedChairlAlert();
+    			sillaD6BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -304,6 +525,14 @@ public class MiniRoomMap {
     		if(function.room.isAvailable(3, 6)) {
     			function.room.assingClient(client, 3, 6);
     			successfullyAssignedChairlAlert();
+    			sillaD7BTN.setStyle("-fx-background-radius: 5em; " +
+    			        "-fx-min-width: 52px; " +
+    			        "-fx-min-height: 52px; " +
+    			        "-fx-max-width: 54px; " +
+    			        "-fx-max-height: 54px; " +
+    			        "-fx-background-color: #03226E;" +
+    			        "-fx-background-insets: 0px; " +
+    			        "-fx-padding: 0px;");
     		} else {
     			inUseChairAlert();
     		}
@@ -325,6 +554,292 @@ public class MiniRoomMap {
 	    alert.setContentText("Ha reservado satisfactoriamente.");
 	    alert.showAndWait();
     }
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		if(!function.room.isAvailable(0, 0)) {
+			sillaA1BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(0, 1)) {
+			sillaA2BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(0, 2)) {
+			sillaA3BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(0, 3)) {
+			sillaA4BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(0, 4)) {
+			sillaA5BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(0, 5)) {
+			sillaA6BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(0, 6)) {
+			sillaA7BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(1, 0)) {
+			sillaB1BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(1, 1)) {
+			sillaB2BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(1, 2)) {
+			sillaB3BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(1, 3)) {
+			sillaB4BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(1, 4)) {
+			sillaB5BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(1, 5)) {
+			sillaB6BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(1, 6)) {
+			sillaB7BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(2, 0)) {
+			sillaC1BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(2, 1)) {
+			sillaC2BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(2, 2)) {
+			sillaC3BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(2, 3)) {
+			sillaC4BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(2, 4)) {
+			sillaC5BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(2, 5)) {
+			sillaC6BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(2, 6)) {
+			sillaC7BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(3, 0)) {
+			sillaD1BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(3, 1)) {
+			sillaD2BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(3, 2)) {
+			sillaD3BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		}
+		if(!function.room.isAvailable(3, 3)) {
+			sillaD4BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(3, 4)) {
+			sillaD5BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(3, 5)) {
+			sillaD6BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+		} 
+		if(!function.room.isAvailable(3, 6)) {
+			sillaD7BTN.setStyle("-fx-background-radius: 5em; " +
+			        "-fx-min-width: 52px; " +
+			        "-fx-min-height: 52px; " +
+			        "-fx-max-width: 54px; " +
+			        "-fx-max-height: 54px; " +
+			        "-fx-background-color: #03226E;" +
+			        "-fx-background-insets: 0px; " +
+			        "-fx-padding: 0px;");
+    		
+		}
+		
+	}
 
 }
 

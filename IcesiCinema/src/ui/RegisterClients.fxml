@@ -4,16 +4,50 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="208.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="doneBTN" layoutX="75.0" layoutY="210.0" mnemonicParsing="false" onAction="#doneRegisteredClient" text="Button" />
-      <Label layoutX="33.0" layoutY="24.0" text="Nombre" />
-      <Label layoutX="33.0" layoutY="97.0" text="Numero de identificacion" />
-      <TextField fx:id="nameClientTF" layoutX="33.0" layoutY="41.0" />
-      <TextField fx:id="idClientTF" layoutX="33.0" layoutY="114.0" />
-      <ChoiceBox fx:id="roomChoiceCB" layoutX="33.0" layoutY="170.0" prefWidth="150.0" />
-      <Label layoutX="33.0" layoutY="153.0" text="Sala" />
+      <ImageView fitHeight="300.0" fitWidth="320.0" layoutX="-6.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../interfaz/a2.png" />
+         </image>
+         <effect>
+            <MotionBlur radius="2.0" />
+         </effect>
+      </ImageView>
+      <Button fx:id="doneBTN" layoutX="220.0" layoutY="242.0" mnemonicParsing="false" onAction="#doneRegisteredClient" prefHeight="33.0" prefWidth="79.0" style="-fx-background-color: #D4E0F0;" text="Hecho">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Button>
+      <Label layoutX="26.0" layoutY="36.0" text="Nombre:">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="101.0" text="Numero de identificacion:">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Label>
+      <TextField fx:id="nameClientTF" layoutX="26.0" layoutY="63.0" style="-fx-background-color: #D4E0F0;" />
+      <TextField fx:id="idClientTF" layoutX="26.0" layoutY="129.0" style="-fx-background-color: #D4E0F0;" />
+      <ChoiceBox fx:id="roomChoiceCB" layoutX="26.0" layoutY="193.0" prefWidth="150.0" style="-fx-background-color: #D4E0F0;" />
+      <Label layoutX="26.0" layoutY="166.0" text="Sala:">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Label>
+      <ImageView fitHeight="98.0" fitWidth="90.0" layoutX="-45.0" layoutY="-45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../interfaz/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="volverBTN" layoutX="137.0" layoutY="242.0" mnemonicParsing="false" onAction="#volver" prefHeight="33.0" prefWidth="79.0" style="-fx-background-color: #D4E0F0;" text="Volver">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

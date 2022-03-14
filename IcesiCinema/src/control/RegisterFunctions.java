@@ -45,6 +45,9 @@ public class RegisterFunctions implements Initializable{
 
     @FXML
     private ChoiceBox<String> roomCB;
+    
+    @FXML
+    private Button volverBTN;
 
     @FXML
     private DatePicker datePicker;
@@ -307,4 +310,18 @@ public class RegisterFunctions implements Initializable{
 		roomCB.getItems().add("Mini room");
 		roomCB.getItems().add("Medium room");
 	}
+	
+	 @FXML
+    void volver(ActionEvent event) throws IOException {
+		 FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/Menu.fxml"));
+ 		loader.setController(new Menu());
+ 		Parent parent = (Parent) loader.load();
+ 		Stage stage = new Stage();
+ 		Scene scene = new Scene(parent);
+ 		stage.setScene(scene);
+ 		stage.show();
+ 		
+ 		Stage stage1 = (Stage) volverBTN.getScene().getWindow();
+ 	    stage1.close();
+    }
 }

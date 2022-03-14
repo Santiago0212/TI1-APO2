@@ -39,6 +39,9 @@ public class RegisterClients implements Initializable{
     @FXML
     private ChoiceBox<String> roomChoiceCB;
     
+    @FXML
+    private Button volverBTN;
+    
     FunctionData functionData;
     
     @FXML
@@ -149,5 +152,18 @@ public class RegisterClients implements Initializable{
 			}	
 		}
 	}
+    @FXML
+    void volver(ActionEvent event) throws IOException {
+		 FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/Menu.fxml"));
+ 		loader.setController(new Menu());
+ 		Parent parent = (Parent) loader.load();
+ 		Stage stage = new Stage();
+ 		Scene scene = new Scene(parent);
+ 		stage.setScene(scene);
+ 		stage.show();
+ 		
+ 		Stage stage1 = (Stage) volverBTN.getScene().getWindow();
+ 	    stage1.close();
+    }
 
 }
