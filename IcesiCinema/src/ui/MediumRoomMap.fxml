@@ -3,10 +3,49 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="99.0" layoutY="200.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="143.0" text="Ejemplo de silla" />
-      <Button fx:id="doneBTN" layoutX="507.0" layoutY="377.0" mnemonicParsing="false" onAction="#registeredChairDone" text="Done" />
+      <Button fx:id="sillaA1BTN" layoutX="72.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A1" />
+      <Button fx:id="sillaA2BTN" layoutX="130.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A2" />
+      <Button fx:id="sillaA3BTN" layoutX="188.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A3" />
+      <Button fx:id="sillaA4BTN" layoutX="246.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A4" />
+      <Button fx:id="sillaA5BTN" layoutX="304.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A5" />
+      <Button fx:id="sillaA6BTN" layoutX="362.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A6" />
+      <Button fx:id="sillaA7BTN" layoutX="420.0" layoutY="72.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="A7" />
+      <Button fx:id="sillaB1BTN" layoutX="72.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B1" />
+      <Button fx:id="sillaB2BTN" layoutX="130.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B2" />
+      <Button fx:id="sillaD7BTN" layoutX="420.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D7" />
+      <Button fx:id="sillaD6BTN" layoutX="362.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D6" />
+      <Button fx:id="sillaD5BTN" layoutX="304.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D5" />
+      <Button fx:id="sillaD4BTN" layoutX="246.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D4" />
+      <Button fx:id="sillaD3BTN" layoutX="188.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D3" />
+      <Button fx:id="sillaD2BTN" layoutX="130.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D2" />
+      <Button fx:id="sillaD1BTN" layoutX="72.0" layoutY="246.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="D1" />
+      <Button fx:id="sillaC7BTN" layoutX="420.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C7" />
+      <Button fx:id="sillaC1BTN" layoutX="72.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C1" />
+      <Button fx:id="sillaC6BTN" layoutX="362.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C6" />
+      <Button fx:id="sillaC5BTN" layoutX="304.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C5" />
+      <Button fx:id="sillaC4BTN" layoutX="247.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C4" />
+      <Button fx:id="sillaC3BTN" layoutX="188.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C3" />
+      <Button fx:id="sillaC2BTN" layoutX="130.0" layoutY="188.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="C2" />
+      <Button fx:id="sillaB7BTN" layoutX="420.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B7" />
+      <Button fx:id="sillaB6BTN" layoutX="362.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B6" />
+      <Button fx:id="sillaB5BTN" layoutX="304.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B5" />
+      <Button fx:id="sillaB4BTN" layoutX="246.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B4" />
+      <Button fx:id="sillaB3BTN" layoutX="188.0" layoutY="130.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="B3" />
+      <Button fx:id="sillaF7BTN" layoutX="420.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F7" />
+      <Button fx:id="sillaF6BTN" layoutX="362.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F6" />
+      <Button fx:id="sillaE7BTN" layoutX="420.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E7" />
+      <Button fx:id="sillaE6BTN" layoutX="362.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E6" />
+      <Button fx:id="sillaF5BTN" layoutX="304.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F5" />
+      <Button fx:id="sillaE5BTN" layoutX="304.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E5" />
+      <Button fx:id="sillaF4BTN" layoutX="246.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F4" />
+      <Button fx:id="sillaE4BTN" layoutX="246.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E4" />
+      <Button fx:id="sillaF3BTN" layoutX="188.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F3" />
+      <Button fx:id="sillaE3BTN" layoutX="188.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E3" />
+      <Button fx:id="sillaF2BTN" layoutX="130.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F2" />
+      <Button fx:id="sillaE2BTN" layoutX="130.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E2" />
+      <Button fx:id="sillaF1BTN" layoutX="72.0" layoutY="362.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="F1" />
+      <Button fx:id="sillaE1BTN" layoutX="72.0" layoutY="304.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" text="E1" />
    </children>
 </AnchorPane>

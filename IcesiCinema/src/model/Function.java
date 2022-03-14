@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Function {
 	private String movieName;
-	private Room room;
+	public Room room;
 	private Date date;
 	private double duration;
 	

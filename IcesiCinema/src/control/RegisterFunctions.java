@@ -1,6 +1,8 @@
 package control;
 
+import java.io.IOException;
 import java.net.URL;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -47,7 +49,7 @@ public class RegisterFunctions implements Initializable{
     
     FunctionData functionData;
     
-    public RegisterFunctions() {
+    public RegisterFunctions() throws ClassNotFoundException, IOException, ParseException {
     	functionData = new FunctionData();
     }
 
@@ -86,6 +88,8 @@ public class RegisterFunctions implements Initializable{
             alert.setTitle("Pudo añadir");
             alert.setContentText("Pudo añadir.");
             alert.showAndWait();
+            
+            
         } else {
         	Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);

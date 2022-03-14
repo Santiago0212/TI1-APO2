@@ -1,6 +1,7 @@
 package control;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,12 +20,21 @@ public class Menu {
     private Button registerClientBTN;
 
     @FXML
-    void registerClient(ActionEvent event) {
-
+    void registerClient(ActionEvent event) throws IOException, ClassNotFoundException, ParseException {
+    	FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/RegisterClients.fxml"));
+		loader.setController(new RegisterClients());
+		Parent parent = (Parent) loader.load();
+		Stage stage = new Stage();
+		Scene scene = new Scene(parent);
+		stage.setScene(scene);
+		stage.show();
+		
+		Stage stage1 = (Stage) registerFunctionBTN.getScene().getWindow();
+	    stage1.close();
     }
 
     @FXML
-    void registerFunction(ActionEvent event) throws IOException {
+    void registerFunction(ActionEvent event) throws IOException, ClassNotFoundException, ParseException {
     	FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/RegisterFunctions.fxml"));
 		loader.setController(new RegisterFunctions());
 		Parent parent = (Parent) loader.load();

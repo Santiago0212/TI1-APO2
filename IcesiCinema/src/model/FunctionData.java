@@ -1,23 +1,120 @@
 package model;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class FunctionData {
-private ArrayList<Function> functions;
 	
-	public FunctionData() {
-		functions = new ArrayList<>();
+	public ArrayList<Function> functions;
+	
+	private String path;
+	private File file;
+	
+	public FunctionData() throws ClassNotFoundException, IOException, ParseException {
+		this.functions = new ArrayList<>();
+		this.path = "Funciones.csv";
+		importCSV();
 	}
 	
-	public boolean addFunction(Function function) {
+	public void importCSV() throws IOException, ClassNotFoundException, ParseException {
+		
+		file = new File(this.path);
+		
+		if(file.exists()) {
+			functions.clear();
+			FileReader fr = new FileReader(this.path);
+			BufferedReader br = new BufferedReader(fr);
+			
+			String line;
+			
+			int i = 0;
+			
+			Date date;
+			Double duration;
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy:MM:dd:HH:mm");
+			
+			while((line = br.readLine()) != null) {
+
+				if(i>0) {
+					String[] function = line.split("\\|");
+					
+	                String movieName = function[0];
+	                String room = function[1];
+	                String dateString = function[2];
+	                String hourString = function[3];
+					String durationString = function[4];
+	                
+	                date = sdf.parse(dateString+":"+hourString);
+	                
+	                String durationData[] = durationString.split(":");
+	                
+	                duration = Double.parseDouble(durationData[0])*3600 + Double.parseDouble(durationData[1])*60;
+	               
+	                
+	                functions.add(new Function(movieName, room, date, duration));
+	   
+				}
+				
+				i++;
+			}
+			
+			if (br != null)br.close();
+            if (fr != null)fr.close();
+		}
+		
+		else {
+			file.createNewFile();
+			
+			FileWriter fw=new FileWriter(file.getAbsoluteFile(), true);
+        	BufferedWriter bw = new BufferedWriter(fw);
+        	
+            bw.write("Movie Name    |    Room Type    |    Date    | Hour | Duration");
+            
+            if (bw != null)bw.close();
+            if (fw != null) fw.close();
+			
+		}
+		
+
+	}
+	
+	public boolean addFunction(Function function) throws IOException {
 		
 		boolean added = false;
 		
 		if(canAdd(function.getDate(),function.getDuration(),function.getRoom())) {
-			functions.add(function);
+			FileWriter fw = new FileWriter(file.getAbsoluteFile(), true);
+        	BufferedWriter bw = new BufferedWriter(fw);
+        	
+        	SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy:MM:dd");
+        	SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm");
+        	
+        	String dateString = sdf1.format(function.getDate());
+        	
+        	String hourString = sdf2.format(function.getDate());
+        	
+        	int durationHour = (int) (function.getDuration()/3600);
+        	
+        	int durationMinutes = (int) ((function.getDuration()%3600)/60);
+        	
+            bw.write("\r"+function.getMovieName()+"|"+function.getRoom().toString()+"|"+dateString+"|"+hourString+"|"+durationHour+":"+durationMinutes);
+            
+            if (bw != null) bw.close();
+            if (fw != null) fw.close();
+			
+            functions.add(function);
+            
 			added = true;
 		}
+		
 		
 		return added;
 	}
@@ -29,43 +126,47 @@ private ArrayList<Function> functions;
 		
 		if(date.compareTo(now)<0) {
 			addable = false;
-		} else {
+		} 
+		else {
 			for(Function f : functions) {
 				
-				double addingInf = date.getTime()/1000;
-				double addingSup = (date.getTime()/1000) + duration;
-				
-				double currentInf = f.getDate().getTime()/1000;
-				double currentSup = (f.getDate().getTime()/1000) + f.getDuration();
-				
-				if(duration==0) {
-					addable = false;
+				if(room.getName().equalsIgnoreCase(f.getRoom().getName())) {
+					double addingInf = date.getTime()/1000;
+					double addingSup = (date.getTime()/1000) + duration;
+					
+					double currentInf = f.getDate().getTime()/1000;
+					double currentSup = (f.getDate().getTime()/1000) + f.getDuration();
+					
+					if(duration<=0) {
+						addable = false;
+					}
+					
+					//Si la pelicula comienza durante una que ya existe
+					if(addingInf>currentInf && addingInf<currentSup) {
+						addable = false;
+					}
+						
+					//Si la pelicula termina durante una que ya existe
+					if(addingSup>currentInf && addingSup<currentSup) {
+						addable = false;
+					}
+						
+						
+					if(currentInf>addingInf && currentInf<addingSup) {
+						addable = false;
+					}
+					
+					if(currentInf>addingInf && currentSup<addingSup) {
+						addable = false;
+					}
+					
+					if(addingInf==currentInf && addingSup==currentSup) {
+						addable = false;
+					}	
 				}
-				
-				//Si la pelicula comienza durante una que ya existe
-				if(addingInf>currentInf && addingInf<currentSup) {
-					addable = false;
-				}
-				
-				//Si la pelicula termina durante una que ya existe
-				if(addingSup>currentInf && addingSup<currentSup) {
-					addable = false;
-				}
-				
-				
-				if(currentInf>addingInf && currentInf<addingSup) {
-					addable = false;
-				}
-				
-				if(currentInf>addingInf && currentSup<addingSup) {
-					addable = false;
-				}
-				
-				if(addingInf==currentInf && addingSup==currentSup) {
-					addable = false;
-				}
-				
-			}
+	
+			}		
+			
 		}
 		
 		

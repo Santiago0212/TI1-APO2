@@ -1,15 +1,18 @@
 package model;
 
-public class MiniRoom extends Room {
-	
-	private boolean chairs[][];
+public class MiniRoom extends Room{
 	
 	public MiniRoom() {
-		super();
-		sizeY = 4;
+		this.sizeX = 7;
+		this.sizeY = 4;
+		this.name = "Medium room";
+		clients = new Client[sizeX][sizeY];	
+	}
+	
+	public String toString() {
+		String room = "Mini room";
 		
-		chairs = new boolean[sizeX][sizeY];
-		
+		return room;
 	}
 	
 }
