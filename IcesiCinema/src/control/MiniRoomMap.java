@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 import model.Client;
 import model.Function;
 import model.FunctionData;
@@ -116,6 +117,9 @@ public class MiniRoomMap implements Initializable{
 
     @FXML
     private Button sillaB3BTN;
+    
+    @FXML
+    private Button doneBTN;
 
     @FXML
     void addSilla(ActionEvent event) {
@@ -871,6 +875,13 @@ public class MiniRoomMap implements Initializable{
 		}
 		
 	}
+	
+	@FXML
+    void done(ActionEvent event) {
+	    Stage stage1 = (Stage) doneBTN.getScene().getWindow();
+	    stage1.close();
+
+    }
 
 }
 

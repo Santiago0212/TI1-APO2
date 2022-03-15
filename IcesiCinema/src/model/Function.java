@@ -58,6 +58,16 @@ public class Function {
 		this.duration = duration;
 	}
 	
-	
+	public String getRoomType() {
+		String roomType = "";
+		
+		if(this.room instanceof MiniRoom) {
+			roomType = "Mini Room";
+		} else if(this.room instanceof MediumRoom) {
+			roomType = "Medium Room";
+		}
+		return roomType;
+		
+	}
 	
 }

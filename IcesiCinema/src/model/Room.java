@@ -71,14 +71,6 @@ public class Room {
 	
 	public void loadJSON() {
 		
-		/*for(int i = 0; i<sizeX; i++) {
-			for(int j = 0; j<sizeY; j++) {
-				if(clients[i][j]!=null) {
-					clients[i][j] = null;
-				}
-			}
-		}*/
-		
 		FileInputStream fis;
 		try {
 			fis = new FileInputStream(new File("data.json"));

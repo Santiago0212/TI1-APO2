@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="556.0" style="-fx-background-color: #DAE0EF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="666.0" style="-fx-background-color: #DAE0EF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button fx:id="sillaA1BTN" layoutX="118.0" layoutY="106.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" style="-fx-shape: &quot;M 600 300 A 50 50 0 1 1 450 250 A 50 50 0 1 1 600 300 A 50 50 0 1 1 600 300 &quot;; -fx-background-color: #FFFFFF;" />
       <Button fx:id="sillaA2BTN" layoutX="176.0" layoutY="106.0" mnemonicParsing="false" onAction="#addSilla" prefHeight="58.0" prefWidth="58.0" style="-fx-shape: &quot;M 600 300 A 50 50 0 1 1 450 250 A 50 50 0 1 1 600 300 A 50 50 0 1 1 600 300 &quot;; -fx-background-color: #FFFFFF;" />
@@ -97,5 +97,6 @@
             <Font name="Arial" size="16.0" />
          </font>
       </Label>
+      <Button fx:id="doneBTN" layoutX="573.0" layoutY="181.0" mnemonicParsing="false" onAction="#done" text="Done" />
    </children>
 </AnchorPane>

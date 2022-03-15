@@ -18,6 +18,9 @@ public class Menu {
 
     @FXML
     private Button registerClientBTN;
+    
+    @FXML
+    private Button seeReportBTN;
 
     @FXML
     void registerClient(ActionEvent event) throws IOException, ClassNotFoundException, ParseException {
@@ -29,8 +32,9 @@ public class Menu {
 		stage.setScene(scene);
 		stage.show();
 		
-		Stage stage1 = (Stage) registerFunctionBTN.getScene().getWindow();
+		Stage stage1 = (Stage) registerClientBTN.getScene().getWindow();
 	    stage1.close();
+		
     }
 
     @FXML
@@ -45,6 +49,17 @@ public class Menu {
 		
 		Stage stage1 = (Stage) registerFunctionBTN.getScene().getWindow();
 	    stage1.close();
+    }
+    
+    @FXML
+    void seeReport(ActionEvent event) throws IOException {
+    	FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/Report.fxml"));
+		loader.setController(new Report());
+		Parent parent = (Parent) loader.load();
+		Stage stage = new Stage();
+		Scene scene = new Scene(parent);
+		stage.setScene(scene);
+		stage.show();
     }
 
 }

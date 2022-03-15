@@ -77,6 +77,7 @@ public class RegisterClients implements Initializable{
     		Scene scene = new Scene(parent);
     		stage.setScene(scene);
     		stage.show();
+    		
         }
         else if(roomString.equalsIgnoreCase("Medium room")) {
         	FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/MediumRoomMap.fxml"));
@@ -86,24 +87,9 @@ public class RegisterClients implements Initializable{
     		Scene scene = new Scene(parent);
     		stage.setScene(scene);
     		stage.show();
+    		
         }
      
-        /*
-        if(added) {
-        	Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setHeaderText(null);
-            alert.setTitle("Pudo añadir");
-            alert.setContentText("Pudo añadir.");
-            alert.showAndWait();
-            
-            
-        } else {
-        	Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setTitle("Error");
-            alert.setContentText("No pudo añadir.");
-            alert.showAndWait();
-        }*/
     }
     
     @Override

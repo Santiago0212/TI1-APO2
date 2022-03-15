@@ -18,11 +18,11 @@
             <MotionBlur angle="77.14" radius="2.0" />
          </effect>
       </ImageView>
-      <Button fx:id="registerFunctionBTN" layoutX="72.0" layoutY="260.0" mnemonicParsing="false" onAction="#registerFunction" prefHeight="47.0" prefWidth="171.0" style="-fx-background-color: #D4E0F0;" text="Registrar Funcion">
+      <Button fx:id="registerFunctionBTN" layoutX="72.0" layoutY="208.0" mnemonicParsing="false" onAction="#registerFunction" prefHeight="47.0" prefWidth="171.0" style="-fx-background-color: #D4E0F0;" text="Registrar Funcion">
          <font>
             <Font name="Arial" size="18.0" />
          </font></Button>
-      <Button fx:id="registerClientBTN" layoutX="72.0" layoutY="340.0" mnemonicParsing="false" onAction="#registerClient" prefHeight="47.0" prefWidth="171.0" style="-fx-background-color: #D4E0F0;" text="Registrar clientes">
+      <Button fx:id="registerClientBTN" layoutX="72.0" layoutY="280.0" mnemonicParsing="false" onAction="#registerClient" prefHeight="47.0" prefWidth="171.0" style="-fx-background-color: #D4E0F0;" text="Registrar clientes">
          <font>
             <Font name="Arial" size="18.0" />
          </font></Button>
@@ -36,5 +36,10 @@
             <Image url="@../../interfaz/logo-icesi.png" />
          </image>
       </ImageView>
+      <Button fx:id="seeReportBTN" layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#seeReport" prefHeight="33.0" prefWidth="146.0" style="-fx-background-color: #D4E0F0;" text="Ver Reporte">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
