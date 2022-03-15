@@ -71,7 +71,7 @@ public class RegisterClients implements Initializable{
 
         if(roomString.equalsIgnoreCase("Mini room")) {
         	FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/MiniRoomMap.fxml"));
-    		loader.setController(new MiniRoomMap(client, addingFunction));
+    		loader.setController(new MiniRoomMap(client, addingFunction, functionData));
     		Parent parent = (Parent) loader.load();
     		Stage stage = new Stage();
     		Scene scene = new Scene(parent);
@@ -80,7 +80,7 @@ public class RegisterClients implements Initializable{
         }
         else if(roomString.equalsIgnoreCase("Medium room")) {
         	FXMLLoader loader = new FXMLLoader(EntryWelfareUniversity.class.getResource("../ui/MediumRoomMap.fxml"));
-    		loader.setController(new MediumRoomMap(client, addingFunction));
+    		loader.setController(new MediumRoomMap(client, addingFunction, functionData));
     		Parent parent = (Parent) loader.load();
     		Stage stage = new Stage();
     		Scene scene = new Scene(parent);
@@ -111,8 +111,8 @@ public class RegisterClients implements Initializable{
 		createRoomsCB();	
 		try {
 			functionData = new FunctionData();
+			functionData.loadJSON();
 		} catch (ClassNotFoundException | IOException | ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

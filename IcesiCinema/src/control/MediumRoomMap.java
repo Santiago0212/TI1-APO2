@@ -10,14 +10,17 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import model.Client;
 import model.Function;
+import model.FunctionData;
 
 public class MediumRoomMap implements Initializable{
 	private Client client;
 	private Function function;
+	private FunctionData functionData;
 	
-	public MediumRoomMap(Client client, Function function) {
+	public MediumRoomMap(Client client, Function function, FunctionData functionData) {
 		this.client = client;
 		this.function = function;
+		this.functionData = functionData;
 	}
 
 	public Client getClient() {
@@ -159,6 +162,7 @@ public class MediumRoomMap implements Initializable{
     	if(event.getSource()==sillaA1BTN) {
     		if(function.room.isAvailable(0, 0)) {
     			function.room.assingClient(client, 0, 0);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA1BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -174,6 +178,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaA2BTN) {
     		if(function.room.isAvailable(0, 1)) {
     			function.room.assingClient(client, 0, 1);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA2BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -189,6 +194,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaA3BTN) {
     		if(function.room.isAvailable(0, 2)) {
     			function.room.assingClient(client, 0, 2);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA3BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -204,6 +210,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaA4BTN) {
     		if(function.room.isAvailable(0, 3)) {
     			function.room.assingClient(client, 0, 3);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA4BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -219,6 +226,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaA5BTN) {
     		if(function.room.isAvailable(0, 4)) {
     			function.room.assingClient(client, 0, 4);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA5BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -234,6 +242,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaA6BTN) {
     		if(function.room.isAvailable(0, 5)) {
     			function.room.assingClient(client, 0, 5);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA6BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -249,6 +258,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaA7BTN) {
     		if(function.room.isAvailable(0, 6)) {
     			function.room.assingClient(client, 0, 6);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaA7BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -264,6 +274,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB1BTN) {
     		if(function.room.isAvailable(1, 0)) {
     			function.room.assingClient(client, 1, 0);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB1BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -279,6 +290,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB2BTN) {
     		if(function.room.isAvailable(1, 1)) {
     			function.room.assingClient(client, 1, 1);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB2BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -294,6 +306,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB3BTN) {
     		if(function.room.isAvailable(1, 2)) {
     			function.room.assingClient(client, 1, 2);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB3BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -309,6 +322,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB4BTN) {
     		if(function.room.isAvailable(1, 3)) {
     			function.room.assingClient(client, 1, 3);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB4BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -324,6 +338,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB5BTN) {
     		if(function.room.isAvailable(1, 4)) {
     			function.room.assingClient(client, 1, 4);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB5BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -339,6 +354,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB6BTN) {
     		if(function.room.isAvailable(1, 5)) {
     			function.room.assingClient(client, 1, 5);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB6BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -354,6 +370,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaB7BTN) {
     		if(function.room.isAvailable(1, 6)) {
     			function.room.assingClient(client, 1, 6);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaB7BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -369,6 +386,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC1BTN) {
     		if(function.room.isAvailable(2, 0)) {
     			function.room.assingClient(client, 2, 0);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC1BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -384,6 +402,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC2BTN) {
     		if(function.room.isAvailable(2, 1)) {
     			function.room.assingClient(client, 2, 1);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC2BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -399,6 +418,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC3BTN) {
     		if(function.room.isAvailable(2, 2)) {
     			function.room.assingClient(client, 2, 2);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC3BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -414,6 +434,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC4BTN) {
     		if(function.room.isAvailable(2, 3)) {
     			function.room.assingClient(client, 2, 3);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC4BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -429,6 +450,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC5BTN) {
     		if(function.room.isAvailable(2, 4)) {
     			function.room.assingClient(client, 2, 4);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC5BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -444,6 +466,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC6BTN) {
     		if(function.room.isAvailable(2, 5)) {
     			function.room.assingClient(client, 2, 5);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC6BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -459,6 +482,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaC7BTN) {
     		if(function.room.isAvailable(2, 6)) {
     			function.room.assingClient(client, 2, 6);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaC7BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -474,6 +498,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD1BTN) {
     		if(function.room.isAvailable(3, 0)) {
     			function.room.assingClient(client, 3, 0);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD1BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -489,6 +514,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD2BTN) {
     		if(function.room.isAvailable(3, 1)) {
     			function.room.assingClient(client, 3, 1);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD2BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -504,6 +530,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD3BTN) {
     		if(function.room.isAvailable(3, 2)) {
     			function.room.assingClient(client, 3, 2);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD3BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -519,6 +546,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD4BTN) {
     		if(function.room.isAvailable(3, 3)) {
     			function.room.assingClient(client, 3, 3);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD4BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -534,6 +562,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD5BTN) {
     		if(function.room.isAvailable(3, 4)) {
     			function.room.assingClient(client, 3, 4);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD5BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -549,6 +578,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD6BTN) {
     		if(function.room.isAvailable(3, 5)) {
     			function.room.assingClient(client, 3, 5);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD6BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -564,6 +594,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaD7BTN) {
     		if(function.room.isAvailable(3, 6)) {
     			function.room.assingClient(client, 3, 6);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaD7BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -579,6 +610,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE1BTN) {
     		if(function.room.isAvailable(4, 0)) {
     			function.room.assingClient(client, 4, 0);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE1BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -594,6 +626,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE2BTN) {
     		if(function.room.isAvailable(4, 1)) {
     			function.room.assingClient(client, 4, 1);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE2BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -609,6 +642,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE3BTN) {
     		if(function.room.isAvailable(4, 2)) {
     			function.room.assingClient(client, 4, 2);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE3BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -624,6 +658,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE4BTN) {
     		if(function.room.isAvailable(4, 3)) {
     			function.room.assingClient(client, 4, 3);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE4BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -639,6 +674,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE5BTN) {
     		if(function.room.isAvailable(4, 4)) {
     			function.room.assingClient(client, 4, 4);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE5BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -654,6 +690,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE6BTN) {
     		if(function.room.isAvailable(4, 5)) {
     			function.room.assingClient(client, 4, 5);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE6BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -669,6 +706,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaE7BTN) {
     		if(function.room.isAvailable(4, 6)) {
     			function.room.assingClient(client, 4, 6);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaE7BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -684,6 +722,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF1BTN) {
     		if(function.room.isAvailable(5, 0)) {
     			function.room.assingClient(client, 5, 0);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF1BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -699,6 +738,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF2BTN) {
     		if(function.room.isAvailable(5, 1)) {
     			function.room.assingClient(client, 5, 1);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF2BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -714,6 +754,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF3BTN) {
     		if(function.room.isAvailable(5, 2)) {
     			function.room.assingClient(client, 5, 2);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF3BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -729,6 +770,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF4BTN) {
     		if(function.room.isAvailable(5, 3)) {
     			function.room.assingClient(client, 5, 3);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF4BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -744,6 +786,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF5BTN) { 
     		if(function.room.isAvailable(5, 4)) {
     			function.room.assingClient(client, 5, 4);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF5BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -759,6 +802,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF6BTN) {
     		if(function.room.isAvailable(5, 5)) {
     			function.room.assingClient(client, 5, 5);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF6BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +
@@ -774,6 +818,7 @@ public class MediumRoomMap implements Initializable{
     	}else if(event.getSource()==sillaF7BTN) {
     		if(function.room.isAvailable(5, 6)) {
     			function.room.assingClient(client, 5, 6);
+    			functionData.saveJSON();
     			successfullyAssignedChairlAlert();
     			sillaF7BTN.setStyle("-fx-background-radius: 5em; " +
     			        "-fx-min-width: 52px; " +

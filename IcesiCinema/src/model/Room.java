@@ -1,5 +1,15 @@
 package model;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import com.google.gson.Gson;
+
 public class Room {
 	protected int sizeX;
 	protected int sizeY;
@@ -28,6 +38,71 @@ public class Room {
 	
 	public void assingClient(Client client, int x, int y) {
 		clients[x][y] = client;
+	}
+	public int getSizeX() {
+		return sizeX;
+	}
+	public void setSizeX(int sizeX) {
+		this.sizeX = sizeX;
+	}
+	public int getSizeY() {
+		return sizeY;
+	}
+	public void setSizeY(int sizeY) {
+		this.sizeY = sizeY;
+	}
+	
+	public void saveJSON() {
+		try {
+			Gson gson = new Gson();
+			String json = gson.toJson(this);
+			System.out.println(json);
+			File file = new File("data.json");
+			FileOutputStream fos = new FileOutputStream(file);
+			fos.write(json.getBytes());
+			fos.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void loadJSON() {
+		
+		/*for(int i = 0; i<sizeX; i++) {
+			for(int j = 0; j<sizeY; j++) {
+				if(clients[i][j]!=null) {
+					clients[i][j] = null;
+				}
+			}
+		}*/
+		
+		FileInputStream fis;
+		try {
+			fis = new FileInputStream(new File("data.json"));
+			BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
+			
+			String line;
+			String json = "";
+			while((line = reader.readLine())!=null) {
+				json += line;
+			}
+			
+			System.out.println(json);
+			
+			Gson gson = new Gson();
+			Room loadingRoom = gson.fromJson(json,Room.class);
+			
+			this.clients = loadingRoom.clients;
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 }
