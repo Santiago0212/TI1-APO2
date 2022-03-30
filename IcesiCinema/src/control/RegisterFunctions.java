@@ -72,7 +72,7 @@ public class RegisterFunctions implements Initializable{
     	
         dateString += ":"+functionHour+":"+functionMinutes;
         
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy:MM:dd:HH:mm");
         Date date = sdf.parse(dateString);
         
         String movieName = nameFunctionTF.getText();
